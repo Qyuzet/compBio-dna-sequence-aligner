@@ -1,6 +1,7 @@
 # DNA Sequence Aligner - Assignment 3
 
 ## Computational Biology (SCIE6062001)
+
 **Odd Semester 2025–2026 AY**
 
 This repository contains the implementation of Assignment 3: Pairwise and Multiple Sequence Alignment.
@@ -42,10 +43,12 @@ compBio-dna-sequence-aligner-dp/
 **Objective:** Measure overall similarity between homologous recA genes from different bacterial species.
 
 **Dataset:**
-- *E. coli* recA gene (GenBank: NC_000913.3, coordinates 2,634,390–2,635,806)
-- *Salmonella enterica* recA gene (GenBank: NC_003198.1, coordinates 2,711,800–2,713,200)
+
+- _E. coli_ recA gene (GenBank: NC_000913.3, coordinates 2,634,390–2,635,806)
+- _Salmonella enterica_ recA gene (GenBank: NC_003198.1, coordinates 2,711,800–2,713,200)
 
 **Implementation:**
+
 - Uses Needleman-Wunsch algorithm for global alignment
 - Simple DNA scoring matrix (match=1, mismatch=-1, gap=-2)
 - Reports alignment score, number of mismatches, and number of gaps
@@ -55,10 +58,12 @@ compBio-dna-sequence-aligner-dp/
 **Objective:** Identify regions of strong local similarity between related proteins.
 
 **Dataset:**
+
 - Human cytochrome c oxidase subunit I (COX1) - UniProt P00395
 - Mouse cytochrome c oxidase subunit I (COX1) - UniProt P00405
 
 **Implementation:**
+
 - Uses Smith-Waterman algorithm for local alignment
 - BLOSUM62 substitution matrix for protein scoring
 - Gap penalty of -8
@@ -69,6 +74,7 @@ compBio-dna-sequence-aligner-dp/
 **Objective:** Study evolutionary conservation across homologous hemoglobin beta subunit proteins.
 
 **Dataset:**
+
 - Human HBB (UniProt P68871)
 - Mouse HBB (UniProt P02088)
 - Chicken HBB (UniProt P01994)
@@ -76,6 +82,7 @@ compBio-dna-sequence-aligner-dp/
 - Frog HBB (UniProt P02125)
 
 **Implementation:**
+
 - Progressive alignment approach using pairwise Needleman-Wunsch
 - BLOSUM62 substitution matrix
 - Identifies conserved amino acid positions across all species
@@ -102,6 +109,7 @@ pip install biopython jupyter
 ### Running the Jupyter Notebook
 
 1. Open Jupyter Notebook:
+
    ```bash
    jupyter notebook sequence-aligner.ipynb
    ```
@@ -163,11 +171,11 @@ The notebook provides detailed results for each problem including:
 
 ## References
 
-- Needleman, S. B., & Wunsch, C. D. (1970). A general method applicable to the search for similarities in the amino acid sequence of two proteins. *Journal of Molecular Biology*, 48(3), 443-453.
-- Smith, T. F., & Waterman, M. S. (1981). Identification of common molecular subsequences. *Journal of Molecular Biology*, 147(1), 195-197.
-- Henikoff, S., & Henikoff, J. G. (1992). Amino acid substitution matrices from protein blocks. *Proceedings of the National Academy of Sciences*, 89(22), 10915-10919.
+- Needleman, S. B., & Wunsch, C. D. (1970). A general method applicable to the search for similarities in the amino acid sequence of two proteins. _Journal of Molecular Biology_, 48(3), 443-453.
+- Smith, T. F., & Waterman, M. S. (1981). Identification of common molecular subsequences. _Journal of Molecular Biology_, 147(1), 195-197.
+- Henikoff, S., & Henikoff, J. G. (1992). Amino acid substitution matrices from protein blocks. _Proceedings of the National Academy of Sciences_, 89(22), 10915-10919.
 
-## Author
+## Author ( Riki Awal Syahputra )
 
 Assignment completed for Computational Biology (SCIE6062001)
 Odd Semester 2025–2026 AY
@@ -175,4 +183,3 @@ Odd Semester 2025–2026 AY
 ## License
 
 This is an academic assignment. Please refer to your institution's academic integrity policies.
-
